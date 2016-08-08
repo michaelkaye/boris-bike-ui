@@ -1,0 +1,20 @@
+<html>
+<head>
+<title> HAHAHA</title>
+</head>
+<body>
+<h1>Bike Status</h1>
+<table>
+  <tr>
+    <th>Station</th><th>Bikes/Docks</th>
+  </tr>
+  {% for item in data.stations %}
+  <tr>
+    <td>{{item.name}}</td>
+    <td>{{item.bikes}}/{{item.docks}}</td>
+  </tr>
+  {% endfor %}
+</table>
+<h2>Page generated at {{ data.now }}
+</body>
+</html>
